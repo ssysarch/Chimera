@@ -1,0 +1,32 @@
+DATASET_PATHS = [
+    dict(
+        real_path="../data/stylegan2_orig",
+        fake_path="../data/stylegan2_orig",
+        data_mode="wang2020",
+        key="raw",
+    ),
+    dict(
+        real_path="../data/iphone/recap_mac",
+        fake_path="../data/iphone/recap_mac",
+        data_mode="wang2020",
+        key="mac",
+    ),
+    dict(
+        real_path="../data/iphone/attack_mac",
+        fake_path="../data/iphone/attack_mac",
+        data_mode="wang2020",
+        key="mac_adv",
+    ),
+    dict(
+        real_path="../data/iphone/recap_monitor",
+        fake_path="../data/iphone/recap_monitor",
+        data_mode="wang2020",
+        key="monitor",
+    ),
+    dict(
+        real_path="../data/iphone/attack_monitor",
+        fake_path="../data/iphone/attack_monitor",
+        data_mode="wang2020",
+        key="monitor_adv",
+    ),
+]
