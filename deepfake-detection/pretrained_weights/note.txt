@@ -1,0 +1,5 @@
+Move the following files to this folder:
+
+fatformer_4class_ckpt.pth 
+fc_weights.pth 
+ViT-L-14.pt
