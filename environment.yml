@@ -1,4 +1,4 @@
-name: pidnet
+name: chimera
 channels:
   - pytorch
   - nvidia
