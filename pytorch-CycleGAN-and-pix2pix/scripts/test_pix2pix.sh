@@ -1,0 +1,11 @@
+set -ex
+# python test.py --dataroot /home/seongbin/recap-det/data/pix2pix --name recap2raw --model pix2pix --netG unet_256 --direction AtoB --dataset_mode unaligned --norm batch --gpu_ids 1 --serial_batches --eval --preprocess exp --epoch 100
+# python test.py --name attack_bas2 --mode pix2pix --direction AtoB --dataset_mode unaligned --norm instance --gpu_ids 1 --serial_batches --batch_size 48 --preprocess exp --no_flip --epoch 80 --eval --netG uformer_unet --simulator --simulator_epoch 20
+# python test.py --name raw2recap --mode pix2pix --direction AtoB --dataset_mode unaligned --norm instance --gpu_ids 1 --serial_batches --batch_size 1 --preprocess exp --no_flip --epoch 20 --eval 
+python test.py --name sasha_attack_freq1nu_1024b --mode pix2pix --direction AtoB --dataset_mode unaligned --norm instance --gpu_ids 1 --serial_batches --batch_size 48 --preprocess exp --no_flip --epoch latest --eval --netG nested_unet --simulator --simulator_epoch 5 --crop_size 1024
+python test.py --name sasha_attack_freq1_u256_ --mode pix2pix --direction AtoB --dataset_mode unaligned --norm instance --gpu_ids 1 --serial_batches --batch_size 56 --preprocess exp --no_flip --epoch latest --eval --netG unet_256 --crop_size 1024 --simulator --simulator_epoch 5 
+python test.py --name iphone_attack_freq1_uu --mode pix2pix --direction AtoB --dataset_mode unaligned --norm instance --gpu_ids 0 --serial_batches --batch_size 56 --preprocess exp --no_flip --epoch 10 --eval --netG uformer_unet --crop_size 1024 --simulator --simulator_epoch 5 
+python test.py --name sasha1_attack_freq1_uu --mode pix2pix --direction AtoB --dataset_mode unaligned --norm instance --gpu_ids 0 --serial_batches --batch_size 56 --preprocess exp --no_flip --epoch 10 --eval --netG uformer_unet --crop_size 1024 --simulator --simulator_epoch 5 
+python test.py --name iphoneD_attack_freq1_uu --mode pix2pix --direction AtoB --dataset_mode unaligned --norm instance --gpu_ids 0 --serial_batches --batch_size 56 --preprocess exp --no_flip --epoch 3 --eval --netG uformer_unet --crop_size 1024 --simulator --simulator_epoch 5 
+
+python test.py --name sashab2_attack_freq1_uu --mode pix2pix --direction AtoB --dataset_mode unaligned --norm instance --gpu_ids 0 --serial_batches --batch_size 56 --preprocess exp --no_flip --epoch 5 --eval --netG uformer_unet --crop_size 1024 --simulator --simulator_epoch 5 

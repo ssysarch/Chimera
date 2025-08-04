@@ -1,0 +1,6 @@
+stylegan2F - mac
+attack_fin3 - adv on mac
+stylegan2D - monitor
+attack_screenD - adv on monitor
+
+python main.py --test --test_path TEST_PATH --config CONFIG --test_raw_dirnames RAW_DIRNAMES --test_recap_dirnames RECAP_DIRNAMES
