@@ -30,6 +30,6 @@ will run all the deepfake detection tests at once and save the results in the `d
 
 
 ## Training Chimera
-To train Chimera, you must collect data using a fixed screen and camera setup. Then, use the pix2pix training script to train the model. The training script is located in the `pytorch-CycleGAN-and-pix2pix` directory. 
+To train Chimera, you must collect data using a fixed screen and camera setup. Then, use the pix2pix training script to train the model. Training is done in the `pytorch-CycleGAN-and-pix2pix` directory. 
 
 Examples of training commands are provided in the `pytorch-CycleGAN-and-pix2pix/scripts/train_pix2pix.sh` file; ideal parameters depend on setup. Refer to the paper for more details on the training process.
